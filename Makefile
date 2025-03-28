@@ -12,7 +12,7 @@ $(TARGET): $(OBJS)
 install:
 	install -d $(DESTDIR)$(BINDIR)
 	install -m 0755 $(TARGET) $(DESTDIR)$(BINDIR)
-	install -m 0744 $(MANUAL) $(DESTDIR)$(MANDIR)/man1/
+	install -m 0644 $(MANUAL) $(DESTDIR)$(MANDIR)/man1/
 
 clean:
 	rm -f $(OBJS) $(TARGET)
